@@ -8,9 +8,15 @@
     "deploy": "hardhat run scripts/deploy.ts --network monadTestnet",
     "deploy:local": "hardhat run scripts/deploy.ts --network localhost",
     "frontend": "cd frontend && npm run dev",
-    "build": "hardhat compile && cd frontend && npm run build"
+    "build": "node init && hardhat compile && cd frontend && npm run build"
   },
-  "keywords": ["monad", "blockchain", "tictactoe", "delhi", "hackathon"],
+  "keywords": [
+    "monad",
+    "blockchain",
+    "tictactoe",
+    "delhi",
+    "hackathon"
+  ],
   "author": "Monad Blitz Participant",
   "license": "MIT",
   "devDependencies": {
